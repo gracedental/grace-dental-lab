@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>グレース・デンタルラボ</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #cce6ff;
+      color: #1a1a1a;
+    }
+
+    header {
+      background: #1a73e8;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2rem;
+    }
+
+    nav {
+      background: #155ab6;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #e0f0ff;
+      margin: 0.5rem;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 1.5rem 1rem;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      color: #0d47a1;
+      border-bottom: 2px solid #82b1ff;
+      padding-bottom: 0.3rem;
+      font-size: 1.4rem;
+      margin-top: 2rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+    }
+
+    .products img,
+    .container img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      display: block;
+      margin: 0.5rem auto;
+    }
+
+    figure {
+      margin: 1rem 0;
+      text-align: center;
+    }
+
+    figcaption {
+      font-size: 0.95rem;
+      color: #444;
+      margin-top: 0.4rem;
+    }
+
+    .logo {
+      max-width: 140px;
+      margin: 0 auto 1rem;
+      display: block;
+    }
+
+    footer {
+      background: #1a73e8;
+      color: #e0eaff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.3rem 0;
+        font-size: 1rem;
+      }
+
+      .container {
+        padding: 1rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      body {
+        font-size: 0.95rem;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .logo {
+        max-width: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="グレース・デンタルラボ ロゴ" class="logo" onerror="this.style.display='none';" />
+    <h1>グレース・デンタルラボ</h1>
+    <p>確かな技術と誠実な対応で、信頼される歯科技工所を目指します</p>
+  </header>
+
+  <nav>
+    <a href="#greeting">ごあいさつ</a>
+    <a href="#about">技工所紹介</a>
+    <a href="#products">技工物・設備</a>
+    <a href="#case-gallery">症例紹介</a>
+    <a href="#flow">ご依頼の流れ</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+
+  <div class="container">
+    <section id="greeting">
+      <h2>代表挨拶</h2>
+      <p><strong>代表：寺島 光一</strong></p>
+      <img src="representative_photo.png" alt="代表 寺島光一" style="max-width: 300px; height: auto; border-radius: 8px;" />
+      <p>1989年の創業以来、「信頼される技工所」を理念に、精度・納期・品質にこだわり続けてまいりました。</p>
+      <p>常に患者様の安心と満足を第一に考え、歯科医院様との信頼関係を大切にしております。</p>
+      <p>これからも地域に根ざした技工所として、誠実な仕事を積み重ねてまいります。</p>
+    </section>
+
+    <section id="about">
+      <h2>技工所紹介</h2>
+      <p>
+        創業1989年（平成元年）。クラウン・ブリッジを中心に高品質な技工物を製作。<br />
+        柔軟で丁寧な対応が強みです。最新の設備と熟練の技工士による丁寧な仕事で、歯科医院様にご満足いただいております。
+      </p>
+      <img src="lab_real_view_optimized.png1.png" alt="技工所内観"
+     style="width: 90%; max-width: 600px; height: auto; display: block; margin: 1rem auto; border-radius: 6px;" />
+    </section>
+
+    <section id="products" class="products">
+      <h2>技工物・設備紹介</h2>
+      <ul>
+        <li>クラウン・ブリッジ（メタル・セラミック）</li>
+        <li>CAD/CAM冠、CADインレー</li>
+        <li>チタンクラウン、チタン前装冠</li>
+        <li>ジルコニアクラウン・ブリッジ、インレー</li>
+      </ul>
+      <p>主な設備：CAD/CAM、ミリングマシン、高周波鋳造機など。</p>
+    </section>
+
+    <section id="case-gallery" class="products">
+      <h2>技工物・症例紹介</h2>
+
+      <h3>ジルコニア＋ポーセレン（前歯部模型）</h3>
+      <figure>
+        <img src="zirconia_porcelain_1.png" alt="ジルコニア＋ポーセレン模型" />
+        <figcaption>自然な透明感と形態表現にこだわった前歯症例。</figcaption>
+      </figure>
+
+      <h3>オールジルコニアブリッジ（4本）</h3>
+      <figure>
+        <img src="zirconia_bridge_2_front.png" alt="ブリッジ4本 正面" />
+        <figcaption>強度と適合性を重視した臼歯部ブリッジ。</figcaption>
+      </figure>
+      <figure>
+        <img src="zirconia_bridge_1_top.png" alt="ブリッジ4本 側面" />
+        <figcaption>咬頭の形態にも配慮した仕上がり。</figcaption>
+      </figure>
+
+      <h3>ジルコニアブリッジ（ステイン仕上げ・5本）</h3>
+      <figure>
+        <img src="zirconia_bridge_4_five_unit_1.png" alt="ブリッジ5本 正面" />
+        <figcaption>微細な色調再現を行った症例。</figcaption>
+      </figure>
+      <figure>
+        <img src="zirconia_bridge_4_five_unit_2.png" alt="ブリッジ5本 別アングル" />
+        <figcaption>前歯〜小臼歯の5本連結ブリッジ。</figcaption>
+      </figure>
+
+      <h3>CAD/CAM冠・インレー</h3>
+      <figure>
+        <img src="cadcam_crown_1_occlusal.png" alt="クラウン咬合面" />
+        <figcaption>咬合面の形態と色調を忠実に再現。</figcaption>
+      </figure>
+      <figure>
+        <img src="cad_inlay_1_lower.png" alt="インレー下顎" />
+        <figcaption>築盛厚と適合を丁寧に調整した症例。</figcaption>
+      </figure>
+    </section>
+
+    <section id="flow">
+      <h2>ご依頼の流れ・納期</h2>
+      <ol>
+        <li>お電話またはメールでご連絡</li>
+        <li>模型・指示書をご発送</li>
+        <li>製作後に納品（納期：3〜5営業日）</li>
+      </ol>
+    </section>
+
+    <section id="pricing">
+      <h2>料金の目安・お見積り</h2>
+      <p>症例や材料により価格が異なります。詳細はお気軽にお問い合わせください。</p>
+      <p>内容・納期をお伺いし、お見積もりをご案内いたします。</p>
+      <p><strong>TEL:</strong> 03-5371-9468 ｜ <strong>メール:</strong> <a href="mailto:gracedental1989@gmail.com">gracedental1989@gmail.com</a></p>
+    </section>
+
+    <section id="pickup">
+      <h2>近隣医院様への集配について</h2>
+      <p>東京都・神奈川・埼玉エリアに直接の集配対応可能です。ご希望の方は事前にご相談ください。</p>
+    </section>
+
+    <section id="contact">
+      <h2>会社情報・お問い合わせ</h2>
+      <p><strong>技工所名：</strong>グレース・デンタルラボ</p>
+      <p><strong>代表：</strong>寺島 光一</p>
+      <p><strong>住所：</strong>〒151-0072 東京都渋谷区2-42-2 1F</p>
+      <p><strong>営業時間：</strong>平日 9:00〜18:00 ｜ <strong>定休日：</strong>土日祝</p>
+      <p><strong>TEL:</strong> 03-5371-9468<br />
+         <strong>FAX:</strong> 03-5371-9468<br />
+         <strong>メール:</strong> <a href="mailto:gracedental1989@gmail.com">gracedental1989@gmail.com</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 グレース・デンタルラボ ｜ 東京都渋谷区2-42-2 1F</p>
+  </footer>
+</body>
+</html>
